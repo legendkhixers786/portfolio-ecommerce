@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Khizer's personal business portfolio showcasing expertise in AI chatbot development, web development, store creation, and design.">
+    <meta name="keywords" content="Muhammad Khizer, AI development, chatbot development, web development, e-commerce, portfolio">
+    <title>Muhammad Khizer - Personal Business Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c7ddb8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(90deg, #000000, #45a049);
+            color: rgb(179, 162, 162);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: rgb(247, 244, 244);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px solid #caa6a6;
+        }
+        .section:nth-child(even) {
+            background-color: #1b361f;
+        }
+        h1, h2, h3 {
+            margin: 0 0 20px 0;
+            color: #42b145;
+            position: relative;
+        }
+        h2::after, h3::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background-color: #45b645;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        h2:hover::after, h3:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .portfolio-item {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-image {
+            flex: 0 0 200px;
+            margin-left: 20px;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(90deg, #0e0d0d, #45a049);
+            color: rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Add zooming effect to portfolio images */
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1); /* Zoom in by 10% on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Increase shadow for emphasis */
+}
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: #dcdfdc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media li a:hover {
+    color: #50af55;
+}
+section{
+    color: #638663;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muhammad Khizer</h1>
+        <p>Personal Business Portfolio</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <div class="about-text">
+                    <p>Hello! My name is Muhammad Khizer. I am a dedicated professional specializing in AI and chatbot development, web development, store creation, and store design. With a keen eye for detail and a drive for excellence, I have consistently delivered outstanding results in my career. Welcome to my personal business portfolio where you can learn more about my work and achievements.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images.jpg" alt="Muhammad Khizer">
+                </div>
+            </div>
+        </section>
+        <section class="section" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>AI Chatbot Development for E-commerce Platform</h3>
+                <p>Developed an advanced AI chatbot for an e-commerce platform that enhanced customer engagement and boosted sales by 30%. The chatbot was integrated with natural language processing and machine learning capabilities to provide personalized responses to customer inquiries.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Responsive Web Development for a Tech Startup</h3>
+                <p>Designed and developed a responsive website for a tech startup, ensuring a seamless user experience across all devices. The project involved utilizing modern web technologies such as HTML5, CSS3, JavaScript, and React.js.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Online Store Creation for a Retail Business</h3>
+                <p>Created a fully functional online store for a retail business, featuring an intuitive user interface, secure payment gateway integration, and robust inventory management system. The project led to a 40% increase in online sales within the first quarter.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Store Design and Optimization for Improved UX</h3>
+                <p>Redesigned the layout and user experience of an online store to improve navigation and customer satisfaction. Implemented A/B testing and analytics to continuously optimize the design, resulting in a 25% increase in conversion rates.</p>
+            </div>
+        </section>
+
+    </div>
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:mhmdkhizer@gmail.com">mhmdkhizer@gmail.com</a>. You can also connect with me on social media:</p>
+        <ul class="social-media">
+            <li><a href="https://www.instagram.com/sheikh_muhammad_khizer/#" target=>Instagram</a></li>
+            <li><a href=https://web.whatsapp.com/ target=>WhatsApp</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Muhammad Khizer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
